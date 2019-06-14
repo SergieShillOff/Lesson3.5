@@ -13,7 +13,7 @@ public class Main2Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
-        MainApp.getComponentSingleton().inject(this);
+      //  MainApp.getComponentSingleton().(this);
         Context context = MainApp.getComponentSingleton().appContext();
         Log.d("Dto", context.getPackageCodePath());
     }
