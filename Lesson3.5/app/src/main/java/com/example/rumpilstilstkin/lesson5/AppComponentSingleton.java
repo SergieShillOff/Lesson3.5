@@ -14,5 +14,7 @@ public interface AppComponentSingleton {
 
     Context appContext();
 
-    void inject(Activity mainApp);
+ //   void inject(Activity mainApp);
+
+    void injectsToMainActivity(MainActivity mainActivity);
 }
