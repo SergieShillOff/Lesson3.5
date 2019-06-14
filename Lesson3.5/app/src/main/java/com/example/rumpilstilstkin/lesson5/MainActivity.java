@@ -2,7 +2,6 @@ package com.example.rumpilstilstkin.lesson5;
 
 
 import android.content.Context;
-import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
@@ -46,9 +45,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void initDI(){
-        MainApp.getComponentSingleton().injectsToMainActivity(this);
+        MainApp.getComponent().injectsToMainActivity(this);
 
-  //      MainApp.getComponentSingleton().inject(this);
+        MainApp.getComponentSingleton().inject(this);
         Context context = MainApp.getComponentSingleton().appContext();
         Log.d("Dto", context.getPackageCodePath());
     }
